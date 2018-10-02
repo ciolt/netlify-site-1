@@ -1,6 +1,6 @@
 {{ define "main" }}
   <article class="post">
-    <h1>{{.Title}} <small>{{ .Date.Format "Mon, Jan 2, 2006" }}</small></h1>
+    <h1>{{.Title}} <small>{{ .Date.Format "January 2, 2006" }}</small></h1>
     <p>{{ .Description }}</p>
     {{ if .Params.image }}<img src="{{ .Params.image }}" class="featurephoto" alt="{{ .Title }}" />{{ end }}
     {{ .Content }}
