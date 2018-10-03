@@ -41,7 +41,7 @@ body {
   margin: 0 0 32px 0;
 }
 
-.post > small, .post > h1 small {
+.post > small, .post > h1 small, .postslist h2 > small {
   color: #888888;
 }
 
@@ -57,7 +57,7 @@ body {
   margin-left: -20px !important;
 } */
 
-.post > h2 {
+.post > h2, .postslist h2 {
   color: #FFFFFF;
   display: inline-block;
 }
