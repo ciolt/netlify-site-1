@@ -96,12 +96,12 @@ a {
 
 .postslist h2 {
   display: inline;
-  line-height: 1.25 !important;
+  line-height: 1.5 !important;
 }
 
 .postslist > ul li a {
   display: inline;
-  line-height: 1.25;
+  line-height: 1.5;
 }
 
 .postslist > ul li a:hover *, .postslist > ul li a:focus * {
