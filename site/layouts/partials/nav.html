@@ -2,6 +2,7 @@
   <a href="/" class="logoblock">&nbsp;bloggo&nbsp;</a>
   <span>&nbsp;</span>
   <ul class="navver">
-    <li><a href="/post">posts</a></li>
+    <li><a href="/post" class="{{ if Page.URL == 'post' }}">posts</a></li>
+    <li><a href="/about" class="{{ if Page.URL == 'about' }}">about</a></li>
   </ul>
 </nav>
