@@ -58,6 +58,8 @@ body {
 } */
 
 .post > h2, .postslist h2 {
+  line-height: 1.5;
+  font-weight: 700;
   color: #FFFFFF;
   display: inline-block;
 }
