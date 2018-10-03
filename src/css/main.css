@@ -81,7 +81,8 @@ body {
   margin-bottom: 26px;
 }
 
-a:hover {
+a:hover, a:focus {
+  outline: none !important;
   background-color: #ffb900;
   color: #000000;
   font-weight: 700;
@@ -89,4 +90,18 @@ a:hover {
 
 a {
   font-weight: 700;
+}
+
+.postslist h2 {
+  display: inline;
+  line-height: 1.25 !important;
+}
+
+.postslist > ul li a {
+  display: inline;
+  line-height: 1.25;
+}
+
+.postslist > ul li a:hover *, .postslist > ul li a:focus * {
+  color: inherit !important;
 }
