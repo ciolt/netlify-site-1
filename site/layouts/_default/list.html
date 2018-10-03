@@ -1,11 +1,11 @@
 {{ define "main" }}
 
-<div>
+<div class="postslist">
   <ul>
       {{ range (.Paginator 6).Pages.ByPublishDate.Reverse }}
-          <div>
+          <li>
             {{ .Render "li"}}
-          </div>
+          </li>
       {{ end }}
   </ul>
   {{ partial "pagination" . }}
