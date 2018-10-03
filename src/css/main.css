@@ -74,3 +74,17 @@ body {
 .postslist > ul li {
   margin-bottom: 24px;
 }
+
+.jumbotitle {
+  margin-bottom: 26px;
+}
+
+a:hover {
+  background-color: #ffb900;
+  color: #000000;
+  font-weight: 700;
+}
+
+a {
+  font-weight: 700;
+}

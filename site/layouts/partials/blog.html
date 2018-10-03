@@ -1,11 +1,14 @@
 <div>
-  <h2>the creative box of random thoughts by the team at cyberscape</h1>
+  <h2 class="jumbotitle">the creative box of random thoughts by the team at cyberscape</h1>
 
-  <div>
-    {{ range first 3 (where .Data.Pages "Type" "post") }}
-      <div>
-        {{ .Render "li" }}
-      </div>
-    {{ end }}
+  <div class="postslist">
+    <ul>
+      {{ range first 3 (where .Data.Pages "Type" "post") }}
+        <li>
+          {{ .Render "li"}}
+        </li>
+      {{ end }}
+    </ul>
+    {{ partial "pagination" . }}
   </div>
 </div>
