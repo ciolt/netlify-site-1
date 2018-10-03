@@ -65,3 +65,12 @@ body {
 .post {
   margin-bottom: 86px;
 }
+
+.postslist > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.postslist > ul li {
+  margin-bottom: 24px;
+}
