@@ -5,8 +5,8 @@
         {{ if .Paginator.HasPrev }}
             <a rel="prev" title="previous" href="{{ .Paginator.Prev.URL }}">previous</a>
         {{ end }}
-        {{ if .Paginator.HasPrev && .Paginator.HasNext }}
-            &nbsp;|&nbsp;
+        {{ if .Paginator.HasPrev }}
+            {{if .Paginator.HasNext}}&nbsp;|&nbsp;{{end}}
         {{ end }}
         {{ if .Paginator.HasNext }}
             <a title="next page" rel="next" href="{{ .Paginator.Next.URL }}">next</a>
