@@ -1,4 +1,4 @@
 ---
-about: stuff
+title: about page contents
 ---
 
