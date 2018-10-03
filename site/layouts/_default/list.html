@@ -1,13 +1,13 @@
 {{ define "main" }}
 
 <div>
-  <ol start="{{ ((.Paginator.PageNumber - 1) * .Paginator.PageSize) + 1 }}">
+  <ul>
       {{ range (.Paginator 6).Pages.ByPublishDate.Reverse }}
           <div>
             {{ .Render "li"}}
           </div>
       {{ end }}
-  </ol>
+  </ul>
   {{ partial "pagination" . }}
 </div>
 
