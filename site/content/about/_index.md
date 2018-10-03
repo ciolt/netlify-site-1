@@ -1,4 +1,5 @@
 ---
-title: about page contents
+title: welcome to bloggo
+about: uhi8
 ---
 
