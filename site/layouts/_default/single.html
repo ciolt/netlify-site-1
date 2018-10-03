@@ -1,6 +1,27 @@
 {{ define "main" }}
 
-{{ partial "jumbotron" (dict "imageUrl" "/img/7.jpg" "title" "This is where the heading goes" "subtitle" "This is where the subtitle goes") }}
+{{ if .Params.intro }}
+<h2 class="jumbotitle">{{.Params.intro}}</h2>
+{{ end }}
+
 {{ .Content }}
+
+{{ if .Params.about }}
+  <article class="about">{{.Params.about}}</article>
+{{end}}
+
+{{ if .Params.showposts }}
+  <div class="postslist">
+    <ul>
+        {{ range (.Paginator 6).Pages.ByPublishDate.Reverse }}
+            <li>
+              {{ .Render "li"}}
+            </li>
+        {{ end }}
+    </ul>
+    {{ partial "pagination" . }}
+  </div>
+{{ end }}
+
 
 {{ end }}

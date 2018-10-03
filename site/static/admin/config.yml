@@ -19,13 +19,15 @@ collections: # A list of collections the CMS should be able to edit
     label: "Pages"
     files:
       - file: "site/content/_index.md"
-        label: "welcome"
+        label: "Home"
         name: "home"
         fields:
-          - {label: "Intro", name: intro, widget: string}
+          - {label: "Title", name: intro, widget: string}
+          - {label: "Show Posts", name: showposts, widget: boolean}
       - file: "site/content/about/_index.md"
-        label: "about"
+        label: "About"
         name: "about"
         fields:
-          - {label: Title, name: title, widget: string}
+          - {label: Title, name: intro, widget: string}
           - {label: "About", name: about, widget: "markdown"}
+          - {label: "Show Posts", name: showposts, widget: boolean}

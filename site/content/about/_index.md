@@ -1,5 +1,5 @@
 ---
-title: welcome to bloggo
+intro: welcome to bloggo
 about: uhi8
 ---
 

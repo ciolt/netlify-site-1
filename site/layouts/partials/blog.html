@@ -1,14 +1,10 @@
-<div>
-  <h2 class="jumbotitle">{{.Params.intro}}</h2>
-
-  <div class="postslist">
-    <ul>
-      {{ range first 3 (where .Data.Pages "Type" "post") }}
-        <li>
-          {{ .Render "li"}}
-        </li>
-      {{ end }}
-    </ul>
-    {{ partial "pagination" . }}
-  </div>
+<div class="postslist">
+  <ul>
+    {{ range first 3 (where .Data.Pages "Type" "post") }}
+      <li>
+        {{ .Render "li"}}
+      </li>
+    {{ end }}
+  </ul>
+  {{ partial "pagination" . }}
 </div>
