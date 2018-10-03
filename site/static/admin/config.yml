@@ -28,3 +28,4 @@ collections: # A list of collections the CMS should be able to edit
         name: "about"
         fields:
           - {label: Title, name: title, widget: string}
+          - {label: "About", name: "about", widget: "markdown"}
